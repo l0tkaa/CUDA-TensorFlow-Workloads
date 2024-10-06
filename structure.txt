@@ -1,0 +1,15 @@
+gpu-docker-tensorflow
+│
+├── Dockerfile
+├── docker-compose.yml
+├── docker-compose.override.yml (optional)
+├── train.py
+├── LICENSE.txt
+├── README.md
+├── requirements.txt
+├── .gitignore
+├── CONTRIBUTING.md
+├── prometheus.yml
+├── grafana
+│   └── grafana-provisioning.yml
+└── setup.py (optional)

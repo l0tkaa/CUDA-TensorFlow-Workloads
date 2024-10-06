@@ -44,3 +44,4 @@ docker build -t tensorflow-gpu-app .
 
 ### Step 5: Monitor with Prometheus and Grafana
 
+pip install -r requirements.txt
