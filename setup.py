@@ -4,7 +4,7 @@ setup(
     name='gpu_tensorflow_docker',
     version='1.0',
     description='Orchestrating GPU-accelerated workloads with Docker, CUDA, and TensorFlow.',
-    author='Your Name',
+    author='Haylee Gill',
     license='MIT',
     packages=find_packages(),
     install_requires=[
