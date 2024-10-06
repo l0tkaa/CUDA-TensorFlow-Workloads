@@ -34,8 +34,8 @@ sudo systemctl restart docker
 ```
 
 ### Step 2: Build the Docker Image
-git clone https://github.com/l0tkaa/gpu-docker-tensorflow.git
-cd gpu-docker-tensorflow
+git clone https://github.com/l0tkaa/CUDA-TensorFlow-Workloads
+cd CUDA-TensorFlow-Workloads
 docker build -t tensorflow-gpu-app .
 
 ### Step 3: Run the Docker Container
