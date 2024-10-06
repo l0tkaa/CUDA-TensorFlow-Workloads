@@ -1,4 +1,4 @@
-[!WARNING!]
+>[!WARNING]
 >This project is still under development and may contain bugs.
 
 # GPU-Accelerated TensorFlow Workloads with Docker and NVIDIA Docker
