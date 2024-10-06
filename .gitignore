@@ -1,0 +1,25 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Environment variables
+.env
+
+# Docker-related files
+docker-compose.override.yml
+Dockerfile~
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Virtual environment
+venv/
+
+# OS-generated files
+.DS_Store
+Thumbs.db

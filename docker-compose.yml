@@ -13,9 +13,11 @@ services:
               capabilities: [gpu]
     volumes:
       - .:/app
+    env_file:
+      - .env
     command: python train.py
     ports:
-      - "8888:8888"
+      - "${GRAFANA_PORT}:8888"
   
   prometheus:
     image: prom/prometheus
@@ -24,11 +26,12 @@ services:
     command:
       - '--config.file=/etc/prometheus/prometheus.yml'
     ports:
-      - "9090:9090"
+      - "${PROMETHEUS_PORT}:${PROMETHEUS_PORT}"
 
   grafana:
     image: grafana/grafana
-    volumes:
-      - ./grafana/grafana-provisioning.yml:/etc/grafana/provisioning/dashboards/default.yml
+    environment:
+      - GF_SECURITY_ADMIN_USER=${GRAFANA_ADMIN_USER}
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_ADMIN_PASSWORD}
     ports:
-      - "3000:3000"
+      - "${GRAFANA_PORT}:${GRAFANA_PORT}"
