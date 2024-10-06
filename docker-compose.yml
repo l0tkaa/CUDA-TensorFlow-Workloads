@@ -17,7 +17,7 @@ services:
       - .env
     command: python train.py
     ports:
-      - "${GRAFANA_PORT}:8888"
+      - "${TENSORFLOW_PORT}:${TENSORFLOW_PORT}"
   
   prometheus:
     image: prom/prometheus
